@@ -52,7 +52,7 @@ pip install torch-geometric
 
 The official datasets are available [here](https://drive.google.com/drive/folders/1wNoBK6zJo5hemlbJveRPqjcAMxSoWohG?usp=sharing).
 
-### Input Format / Making Your Own Datasets
+### Input Format / Make Your Own Datasets
 
 The dataset file is a pickled Python list consisting of [``rdkit.Chem.rdchem.Mol``](https://www.rdkit.org/docs/source/rdkit.Chem.rdchem.html#rdkit.Chem.rdchem.Mol) objects. Each conformation is stored individually as a `Mol` object. For example, if a dataset contains 3 molecules, where the first molecule has 4 conformations, the second one and the third one have 5 and 6 conformations respectively, then the pickled Python list will contain 4+5+6 `Mol` objects in total.
 

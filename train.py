@@ -55,7 +55,7 @@ parser.add_argument('--beta2', type=float, default=0.999)
 parser.add_argument('--seed', type=int, default=2020)
 parser.add_argument('--logging', type=eval, default=True, choices=[True, False])
 parser.add_argument('--device', type=str, default='cuda')
-parser.add_argument('--max_iters', type=int, default=1000*1000, 
+parser.add_argument('--max_iters', type=int, default=50*1000, 
                     help='Max iterations for MLE pre-training of CNF')
 parser.add_argument('--val_freq', type=int, default=300)
 parser.add_argument('--inspect_freq', type=int, default=50)

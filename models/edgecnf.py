@@ -51,7 +51,7 @@ class EdgeCNF(torch.nn.Module):
 
     def get_d(self, data, z):
         node_attr = self.node_emb(data.node_type)
-        edge_attr = self.node_emb(data.edge_type)
+        edge_attr = self.edge_emb(data.edge_type)
         d = self.flow(
             z,
             node_attr = node_attr,
@@ -63,7 +63,7 @@ class EdgeCNF(torch.nn.Module):
 
     def get_z(self, data, d):
         node_attr = self.node_emb(data.node_type)
-        edge_attr = self.node_emb(data.edge_type)
+        edge_attr = self.edge_emb(data.edge_type)
         z = self.flow(
             d,
             node_attr = node_attr,
@@ -78,7 +78,7 @@ class EdgeCNF(torch.nn.Module):
         z, delta_logpz = self.flow(
             x = d,
             node_attr = self.node_emb(data.node_type),
-            edge_attr = self.node_emb(data.edge_type),
+            edge_attr = self.edge_emb(data.edge_type),
             edge_index = data.edge_index,
             logpx=torch.zeros(E, 1).to(d)
         )
@@ -91,7 +91,7 @@ class EdgeCNF(torch.nn.Module):
         z_traj, _ = self.flow(
             x = d,
             node_attr = self.node_emb(data.node_type),
-            edge_attr = self.node_emb(data.edge_type),
+            edge_attr = self.edge_emb(data.edge_type),
             edge_index = data.edge_index,
             logpx=torch.zeros(E, 1).to(d),
             integration_times=integration_times,
@@ -107,7 +107,7 @@ class EdgeCNF(torch.nn.Module):
     def sample(self, data, num_samples):
         E = data.edge_index.size(1)
         node_attr = self.node_emb(data.node_type)
-        edge_attr = self.node_emb(data.edge_type)
+        edge_attr = self.edge_emb(data.edge_type)
         z = torch.randn(num_samples*E, 1).to(edge_attr)
 
         edge_index_rep = []

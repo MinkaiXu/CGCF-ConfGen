@@ -1,3 +1,14 @@
+# 📢 News 
+**[NEWS]** Please check our latest work on molecular conformation generation, which will appear in ICML'2021 (Long Talk): [Learning Gradient Fields for Molecular Conformation Generation](https://arxiv.org/abs/2105.03902).
+
+![ConfGF](confgf.gif)
+
+-----
+
+
+
+
+
 # CGCF for Conformation Generation
 
 ![cover](cover.png)

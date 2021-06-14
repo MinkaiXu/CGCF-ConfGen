@@ -110,7 +110,7 @@ Please consider citing our work if you find it helpful.
 
 ## Questions
 
-If you have any questions, please create an issue [here](https://github.com/luost26/CGCF-ConfGen/issues/new).
+If you have any questions, please create an issue.
 
 ## Updates
 

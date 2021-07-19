@@ -61,7 +61,7 @@ pip install torch-geometric
 
 ### Official Datasets
 
-The official datasets are available [here](https://drive.google.com/file/d/1O3gEZUFT1s8ublLQxskCUFaGa-C5dq_f/view?usp=sharing).
+The official datasets are available [here](https://drive.google.com/drive/folders/1UTxgyWeXbgDehV1okdZ2UkKwZbe3I0hO?usp=sharing).
 
 ### Input Format / Make Your Own Datasets
 

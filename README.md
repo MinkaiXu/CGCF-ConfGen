@@ -108,9 +108,9 @@ Please consider citing our work if you find it helpful.
 }
 ```
 
-## Questions
+## Contact
 
-If you have any questions, please create an issue.
+If you have any question, please contact me at <minkai.xu@umontreal.ca> or <xuminkai@mila.quebec>.
 
 ## Updates
 

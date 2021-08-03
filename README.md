@@ -1,5 +1,5 @@
 # 📢 News 
-**[NEWS]** Please check our latest work on molecular conformation generation, which will appear in ICML'2021 (Long Talk): [Learning Gradient Fields for Molecular Conformation Generation](https://arxiv.org/abs/2105.03902). [[Code](https://github.com/DeepGraphLearning/ConfGF)]
+**[NEWS]** Please check our latest work on molecular conformation generation, which has been accepted in ICML'2021 (Long Talk): [Learning Gradient Fields for Molecular Conformation Generation](https://arxiv.org/abs/2105.03902). [[Code](https://github.com/DeepGraphLearning/ConfGF)]
 
 ![ConfGF](confgf.gif)
 
